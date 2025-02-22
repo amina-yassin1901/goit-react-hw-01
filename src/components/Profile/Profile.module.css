@@ -1,6 +1,18 @@
 .profile {
+    margin: 150px auto;
     box-sizing: border-box;
     box-shadow: 0 4px 8px rgb(0, 0, 0, 0.1);
+    border: 2px solid gray;
+    border-radius: 8px;
+    padding-top: 20px;
+    width: fit-content;
+}
+
+.profileInfo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .avatar {
@@ -31,25 +43,26 @@
     justify-content: space-between;
 }
 
-.stats-item {
+.statsItem {
     display: flex;
     flex-direction: column;
     border-right: 1px solid gray;
     padding: 15px;
     width: 70px;
+    align-items: center;
 }
 
-.item-last {
+.itemLast {
     border: none;
 }
 
-.span-titel {
+.spanTitel {
     font-size: 16px;
     font-weight: 400;
     color: rgb(53, 53, 53);
 }
 
-.span-text {
+.spanText {
     font-weight: bold;
 }
 

@@ -1,12 +1,15 @@
 import { useState } from 'react'
-import userData from "../../userData.json"
-import Profile from "../Profile/Profile"
+import userData from "../../userData.json";
+import Profile from "../Profile/Profile";
+import FriendList from '../FriendList/FriendList';
+import friends from '../../friends.json';
 
-import './App.css'
+import css from "./App.module.css";
 
 export default function App() {
   return (
-    <Profile className="profile"
+    <>
+      <Profile
       image={userData.avatar}
       name={userData.username}
       tag={userData.tag}
@@ -14,6 +17,13 @@ export default function App() {
       
       stats={userData.stats}
     />
+
+      <hr />
+
+      <FriendList friends={friends} />
+
+      <hr />
+  </>     
   )
  
 
